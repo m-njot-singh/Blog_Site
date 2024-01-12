@@ -58,7 +58,7 @@ export class authService {
         try{
             await this.account.deleteSessions();
         }catch (error){
-            console.log("Appwrite service :: error", error);
+            console.log("Appwrite service :: logout :: error", error);
 
         }
     }
@@ -70,3 +70,4 @@ export class authService {
 const authService = new authService();
 
 export default authService;
+
